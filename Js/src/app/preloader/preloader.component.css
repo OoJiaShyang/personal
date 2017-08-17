@@ -117,27 +117,75 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(-360deg); }
 }
+     
 
 .hideMe {
-    -moz-animation: cssAnimation 0.5s ease-in 1s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0.5s ease-in 1s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0.5s ease-in 1s forwards;
-    /* Opera */
-    animation: cssAnimation 0.5s ease-in 1s forwards;
+    -moz-animation: cssAnimation 1.5s ease-in 2s forwards;
+    -webkit-animation: cssAnimation 1.5s ease-in 2s forwards;
+    -o-animation: cssAnimation 1.5s ease-in 2s forwards;
+    animation: cssAnimation 1.5s ease-in 2s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     opacity: 1;
 }
-@keyframes cssAnimation {
-    to { opacity: 0; z-index: -20; }
+@keyframes cssAnimation { 
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    z-index: -1;
+  }
 }
 @-webkit-keyframes cssAnimation {
-    to { opacity: 0; z-index: -20; }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    z-index: -1;
+  }
 }
-
+ 
 app-home:empty + .hideMe {
     opacity: 1;
     z-index: 100;
 }
+
+/*.hideMe {
+    animation: slideup 1.5s ease-in-out 2s forwards;
+    -moz-animation: slideup 1.5s ease-in-out 2s forwards;
+    -webkit-animation: slideup 1.5s ease-in-out 2s forwards;
+    -o-animation: slideup 1.5s ease-in-out 2s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideup {
+  0% { top:0px; }
+  75% { top:0px; }
+  100% {
+    top:-100%;
+  }
+}
+@-moz-keyframes slideup {
+  0% { top:0px; }
+  75% { top:0px; }
+  100% {
+    top:-100%;
+  }
+}
+@-webkit-keyframes slideup {
+  0% { top:0px; }
+  75% { top:0px; }
+  100% {
+    top:-100%;
+  }
+}
+@-o-keyframes slideup {
+  0% { top:0px; }
+  75% { top:0px; }
+  100% {
+    top:-100%;
+  }
+}*/

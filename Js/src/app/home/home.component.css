@@ -1,0 +1,13 @@
+.home-page{
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../../assets/image/brown-floor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  z-index: -200;
+}
