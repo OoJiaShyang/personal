@@ -1,7 +1,10 @@
 .preload{
   width: 100%;
   height: 100%;
-  background: #202020;
+  background-image: url('../../img/handsome.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;
@@ -70,7 +73,7 @@
 .loader-circle-2{
   width:110px;
   height:110px;
-  background-image: url('../../img/water-splash.jpg');
+  background-image: url('../../img/best-min-js.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,7 +121,6 @@
   100% { transform: rotate(-360deg); }
 }
      
-
 .hideMe {
     -moz-animation: cssAnimation 1.5s ease-in 2s forwards;
     -webkit-animation: cssAnimation 1.5s ease-in 2s forwards;
@@ -128,7 +130,8 @@
     animation-fill-mode: forwards;
     opacity: 1;
 }
-@keyframes cssAnimation { 
+
+/*@keyframes cssAnimation { 
   50%{
     opacity: 0;
   }
@@ -145,7 +148,7 @@
     opacity: 0;
     z-index: -1;
   }
-}
+}*/
  
 app-home:empty + .hideMe {
     opacity: 1;
