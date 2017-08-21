@@ -7,12 +7,23 @@
 .navbar {
   border: 0;
   border-radius: 0;
-  background-color: rgba(255,255,255,0.1);
+  /*background-color: rgba(255,255,255,0.1);*/
+  background: transparent;
+  font-size: 20px;
+}
+
+.navbar a {
+  color:#a9a9a9;
+}
+
+.navbar a:hover {
+  color: #666666;
+  cursor:pointer;
 }
 
 .navbar-nav li a {
     padding-top: 0;
-    line-height: 60px;  
+    line-height: 70px;  
 }
 .navbar-header{
   /*vertical-align: middle;*/

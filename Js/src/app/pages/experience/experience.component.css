@@ -1,0 +1,61 @@
+.skills-container {
+  width:90%;
+  vertical-align: center;
+  margin-right:auto; margin-left:auto; 
+  margin-top:20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+}
+
+.container {
+  width: 100%; 
+  background-color: #ddd; 
+  padding:0;
+  border-radius: 20px; 
+  margin:0;
+}
+
+.skills {
+  text-align: right; 
+  border-radius: 20px; 
+  padding-right: 20px; 
+  line-height: 20px;
+  color: white; 
+}
+
+.java { width: 80%; background-color: #444C5C; animation:java 2s ease-out; } 
+.html { width: 70%; background-color: #CE5A57; animation:html 2s ease-out; } 
+.css { width: 80%; background-color: #78A5A3; animation:css 2s ease-out; } 
+.js { width: 50%; background-color: #E1B16A; animation:js 2s ease-out; } 
+.angular-js { width: 40%; background-color: #AEBD3A; animation:angular-js 2s ease-out; } 
+.php { width: 30%; background-color: #598234; animation:php 2s ease-out; } 
+
+
+@keyframes html { 
+  0%  { width:0px;} 
+  100%{ width:70%;}  
+}
+
+@keyframes css { 
+  0%  { width:0px;} 
+  100%{ width:80%;}  
+}
+
+@keyframes js { 
+  0%  { width:0px;} 
+  100%{ width:50%;}  
+}
+
+@keyframes angular-js { 
+  0%  { width:0px;} 
+  100%{ width:40%;}  
+}
+
+@keyframes php { 
+  0%  { width:0px;} 
+  100%{ width:30%;}  
+}
+
+@keyframes java { 
+  0%  { width:0px;} 
+  100%{ width:80%;}  
+}
