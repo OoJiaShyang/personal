@@ -1,0 +1,32 @@
+.cv{
+  margin: 5rem 0 0 5rem;
+}
+
+a{
+  color: black;
+}
+
+.cv-button{
+  background: #999999;
+  border-radius: 10px;
+  margin-top: 2rem;
+  width: 25rem;
+  height: 5rem;
+  font-size: 20px;
+}
+
+.cv-button:hover{
+  background: #797979;
+}
+
+.long_cv{
+  background: black;
+  height: 40rem;
+  border-radius: 25px;
+}
+
+.short_cv{
+  height: 40rem;
+  border-radius: 25px;
+  background: purple;
+}

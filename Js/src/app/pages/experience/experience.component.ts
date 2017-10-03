@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
+  isScrolled = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll($event) {
+    console.log('booya');
+    if (window.scrollY > 70) {
+      this.isScrolled = true;
+      console.log('here??');
+    } else {
+      this.isScrolled = false;
+    }
   }
 
 }

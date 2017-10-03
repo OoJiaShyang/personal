@@ -26,6 +26,7 @@
 .html { width: 70%; background-color: #CE5A57; animation:html 2s ease-out; } 
 .css { width: 80%; background-color: #78A5A3; animation:css 2s ease-out; } 
 .js { width: 50%; background-color: #E1B16A; animation:js 2s ease-out; } 
+.ionic { width: 50%; background-color: #898989; animation:js 2s ease-out; } 
 .angular-js { width: 40%; background-color: #AEBD3A; animation:angular-js 2s ease-out; } 
 .php { width: 30%; background-color: #598234; animation:php 2s ease-out; } 
 

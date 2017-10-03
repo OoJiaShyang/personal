@@ -1,7 +1,9 @@
 
 .wrap-body {
-	min-height:100%;
-	position:relative;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+}
+
+fa {
+  font-size: 40px;  
 }
 

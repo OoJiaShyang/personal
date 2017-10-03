@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -32,7 +33,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     GoTopButtonModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2PageScrollModule
   ],
   exports: [
     GoTopButtonModule

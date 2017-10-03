@@ -1,7 +1,9 @@
-<div class="navbar navbar-default" role="navigation">
+<div class="navbar navbar-default" 	role="navigation" (window:scroll)="onWindowScroll($event)"
+		[ngStyle]="{ 'background-color' : isScrolled? 'rgba(84,76,76,1)' : 'rgba(255,255,255,0.1)', 
+		              'transition' : 'background-color ease-in-out 0.2s' }">
 	<div class="container">
 		<div class="navbar-header">
-			<a href="index.html"><img src="assets/image/best-min-js.ico" alt="JS" class="header-logo"/></a>				
+			<a href="/"><img src="assets/image/best-min-js.ico" alt="JS" class="header-logo"/></a>				
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
@@ -10,30 +12,12 @@
 			</button>
 			
 		</div>
-		<div class="collapse navbar-collapse nav-elements">
+		<div class="collapse navbar-collapse nav-elements" >
 			<ul class="nav navbar-nav navbar-right" >
-				<li><a href="index.html">Home</a></li>
-				<li><a (click)= "onReload('about')">About</a></li>
-				<li><a (click)= "onReload('experience')">Experience</a></li>
-				<li><a (click)= "onReload('contact')">Contact</a></li>
-				<!--<li role="presentation" routerLinkActive="active" [routerLinkActiveOptions] = "{exact: true}">
-          <a routerLink="/">Test</a></li>
-        <li role="presentation" routerLinkActive="active">
-          <a routerLink="/about">About</a></li>
-        <li role="presentation" routerLinkActive="active">
-          <a [routerLink]="['/experience']">Experience</a></li>
-				<li role="presentation" routerLinkActive="active">
-          <a [routerLink]="['/contact']">Contact</a></li>-->
-				<!--<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
-					<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Page 1-1</a></li>
-						<li><a href="#">Page 1-2</a></li>
-						<li><a href="#">Page 1-3</a></li>
-					</ul>
-				</li>-->
-
+				<li><a href="/">Home</a></li>
+				<li><a pageScroll href="#about">About</a></li>
+				<li><a pageScroll href="#experience">Experience</a></li>
+				<li><a pageScroll href="#contact">CV</a></li>
 			</ul>
 		</div>
 	</div>

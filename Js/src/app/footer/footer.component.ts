@@ -12,4 +12,16 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClickFacebook() {
+    window.open('https://www.facebook.com/oojiashyang', '_blank');
+  }
+
+  onClickInstagram() {
+    window.open('https://www.instagram.com/oojiashyang', '_blank');
+  }
+
+  onClickLinkedIn() {
+    window.open('https://www.linkedin.com/in/jia-shyang-oo-b208a7124', '_blank');
+  }
+
 }
